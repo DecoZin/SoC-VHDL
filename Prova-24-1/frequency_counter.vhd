@@ -146,7 +146,8 @@ begin
         clear_ctrl <= "111";
       end if;
       -- If meas time is achieved restart counting
-      if (meas_end = '1' or overflow) then
+      if (meas_end = '1') then
+        overflow <= false;
         clear_ctrl <= "111";
         bcd_one <= bcd_one_out;
         bcd_ten <= bcd_ten_out;
@@ -169,8 +170,8 @@ begin
       -- If unit, ten and hundred are 9  restart counter and BCDs
       if (bcd_one_out = "1000" and bcd_ten_out = "1001" and bcd_hun_out = "1001") then
         overflow <= true;
-        clear_ctrl <= "000";
-        enable_ctrl <= "000";
+        --clear_ctrl <= "000";
+        --enable_ctrl <= "000";
       end if;
     end if;
 
