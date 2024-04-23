@@ -1,0 +1,12 @@
+Prova: André Lamego Reis de Castro
+
+  A pasta contém os arquivos de design "BCD.vhd" e "frequency-counter" e o testbech
+"frequency-counter_tb". As duas imagens de diagramas representam como o circuito foi
+elaborado, mas possuem uma certa abstração em relação ao design final. 
+
+  O testbech foi feito com um sinal de entrada de frequência de 5 KHz, o que gera um 
+periodo de 200us. Dessa forma para uma amostragem de 1 ms devem ser contados 5 pulsos,
+para 10 ms devemser contados 50 pulsos, para 100 ms devem ser contados 500 pulsos e 
+para 1s devem sercontados 5000 pulsos, porém como a contagem máxima é até 999 o circuito
+desabilita osBCDs ao chegar nesse valor. As imagens com início "Testbech-" mostram o
+resultado obtido, que coincidem com o esperado.
