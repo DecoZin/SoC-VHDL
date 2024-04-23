@@ -9,4 +9,5 @@ periodo de 200us. Dessa forma para uma amostragem de 1 ms devem ser contados 5 p
 para 10 ms devemser contados 50 pulsos, para 100 ms devem ser contados 500 pulsos e 
 para 1s devem sercontados 5000 pulsos, porém como a contagem máxima é até 999 o circuito
 desabilita osBCDs ao chegar nesse valor. As imagens com início "Testbech-" mostram o
-resultado obtido, que coincidem com o esperado.
+resultado obtido, que coincidem com o esperado, sendo o sinal com "_out" no final a saída
+do BCD e o sinal sem a saída do contador de frequência.
