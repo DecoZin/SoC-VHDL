@@ -1,7 +1,7 @@
-.jpeg
-.jpg
-.pdf
-.png
-.ghw
-.cf
-.zip
+*.jpeg
+*.jpg
+*.pdf
+*.png
+*.ghw
+*.cf
+*.zip
